@@ -1,0 +1,19 @@
+[package]
+name = "featuretest"
+version = "0.1.0"
+authors = ["Brian Anderson <andersrb@gmail.com>"]
+edition = "2018"
+
+[features]
+#default = ["mydep2/baz"]
+
+[dependencies.mydep]
+path = "mydep"
+default-features = false
+
+[dependencies.mydep2]
+path = "mydep2"
+default-features = false
+
+[workspace]
+members = ["mydep", "mydep2"]

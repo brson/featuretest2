@@ -1,0 +1,19 @@
+[[package]]
+name = "featuretest"
+version = "0.1.0"
+dependencies = [
+ "mydep 0.1.0",
+ "mydep2 0.1.0",
+]
+
+[[package]]
+name = "mydep"
+version = "0.1.0"
+dependencies = [
+ "mydep2 0.1.0",
+]
+
+[[package]]
+name = "mydep2"
+version = "0.1.0"
+

@@ -1,0 +1,13 @@
+[package]
+name = "mydep"
+version = "0.1.0"
+authors = ["Brian Anderson <andersrb@gmail.com>"]
+edition = "2018"
+
+[features]
+default = ["foo", "mydep2/baz"]
+bar = []
+foo = []
+
+[dependencies]
+mydep2 = { path = "../mydep2", default-features = false }
